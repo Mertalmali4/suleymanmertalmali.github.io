@@ -7351,4 +7351,23 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+
+  /* Önce okların boyutunu ve arka planını düzenleyelim */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    /*background-color: rgba(0, 0, 0, 0.5); /* Arkasına yarı saydam bir arka plan */
+    border-radius: 20%; /* Okların yuvarlak görünmesini sağlar */
+}
+
+/* Okları daha sağa ve sola kaydırmak için */
+.carousel-control-prev {
+    left: -130px; /* Ok daha sola kayar */
+}
+
+.carousel-control-next {
+    right: -130px; /* Ok daha sağa kayar */
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
