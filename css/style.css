@@ -623,3 +623,36 @@ a {
 .letter-spacing {
   letter-spacing: .2rem;
   color: rgba(255, 255, 255, 0.5) !important; }
+
+
+  @font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?hh4okf');
+    src:  url('fonts/icomoon.eot?hh4okf#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?hh4okf') format('truetype'),
+      url('fonts/icomoon.woff?hh4okf') format('woff'),
+      url('fonts/icomoon.svg?hh4okf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-snake-icon:before {
+    content: "\e900";
+  }
+  

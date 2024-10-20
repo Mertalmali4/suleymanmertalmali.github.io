@@ -176,48 +176,49 @@
 		  </div>
 		  <div class="skill-grid">
 			<div class="skill-box">
-			  <span class="icon icon-layers"></span>
-			  <p>Autonomous Systems</p>
-			</div>
-			<div class="skill-box">
-			  <span class="icon icon-robot"></span>
+			  <span class="icon icon-probot"></span> <!-- Robotics -->
 			  <p>Robotics</p>
 			</div>
 			<div class="skill-box">
-			  <span class="icon icon-code"></span>
+			  <span class="icon icon-mechanical-arm-icon"></span> <!-- Autonomous Systems -->
+			  <p>Autonomous Systems</p>
+			</div>
+			<div class="skill-box">
+			  <span class="icon icon-terminal"></span> <!-- Software Development -->
 			  <p>Software Dev.</p>
 			</div>
 			<div class="skill-box">
-			  <span class="icon icon-laptop"></span>
+			  <span class="icon icon-laptop"></span> <!-- Machine Learning -->
 			  <p>Machine Learning</p>
 			</div>
 			<div class="skill-box">
-			  <span class="icon icon-compass"></span>
-			  <p>Navigation</p>
+			  <span class="icon icon-attendance-machine-icon"></span> <!-- Sensor Fusion -->
+			  <p>Sensor Fusion</p>
 			</div>
 			<div class="skill-box">
-			  <span class="icon icon-tools"></span>
-			  <p>Problem Solving</p>
+			  <span class="icon icon-location2"></span> <!-- Localization -->
+			  <p>Localization</p>
 			</div>
 			<div class="skill-box">
-			  <span class="icon icon-chart"></span>
+			  <span class="icon icon-stats-dots"></span> <!-- Data Analysis -->
 			  <p>Data Analysis</p>
 			</div>
 			<div class="skill-box">
-			  <span class="icon icon-cloud"></span>
-			  <p>Cloud Computing</p>
+			  <span class="icon icon-py-file-outline-icon"></span> <!-- Python -->
+			  <p>Python</p>
 			</div>
 			<div class="skill-box">
-			  <span class="icon icon-security"></span>
-			  <p>Cyber Security</p>
+			  <span class="icon icon-c-file-outline-icon"></span> <!-- C, C++ -->
+			  <p>C,C++</p>
 			</div>
 			<div class="skill-box">
-			  <span class="icon icon-design"></span>
-			  <p>UI/UX Design</p>
+			  <span class="icon icon-camera"></span> <!-- Computer Vision -->
+			  <p>Computer Vision</p>
 			</div>
 		  </div>
 		</div>
 	  </section>
+	  
 	  
 	  <style>
 		.skill-grid {
@@ -324,25 +325,25 @@
 					</div>
 				</div>
 				<div class="col-md-7 mb-5 mb-md-0">
-					<form action="" class="site-form">
-						<h3 class="mb-5">Get In Touch</h3>
-						<div class="form-group">
-							<input type="text" class="form-control px-3 py-4" placeholder="Your Name">
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control px-3 py-4" placeholder="Your Email">
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control px-3 py-4" placeholder="Your Phone">
-						</div>
-						<div class="form-group mb-5">
-							<textarea class="form-control px-3 py-4"cols="30" rows="10" placeholder="Write a Message"></textarea>
-						</div>
-						<div class="form-group">
-							<input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
-						</div>
+					<form action="php/send_email.php" method="POST" class="site-form">
+					  <h3 class="mb-5">Get In Touch</h3>
+					  <div class="form-group">
+						<input type="text" name="name" class="form-control px-3 py-4" placeholder="Your Name" required>
+					  </div>
+					  <div class="form-group">
+						<input type="email" name="email" class="form-control px-3 py-4" placeholder="Your Email" required>
+					  </div>
+					  <div class="form-group">
+						<input type="tel" name="phone" class="form-control px-3 py-4" placeholder="Your Phone" required>
+					  </div>
+					  <div class="form-group mb-5">
+						<textarea name="message" class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message" required></textarea>
+					  </div>
+					  <div class="form-group">
+						<input type="submit" class="btn btn-primary px-4 py-3" value="Send Message">
+					  </div>
 					</form>
-				</div>
+				  </div>
 				<div class="col-md-5 pl-md-5">
 					<h3 class="mb-5">My Contact Details</h3>
 					<ul class="site-contact-details">
@@ -367,22 +368,13 @@
 	</section>
 	<footer class="site-footer">
 		<div class="container">
-			<div class="row mb-5">
-				<p class="col-12 text-center">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true" ></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</p>
-			</div>
+
 			
 			<div class="row mb-5">
 				<div class="col-md-12 text-center">
 					<p>
-						<a href="#" class="social-item"><span class="icon-facebook2"></span></a>
-						<a href="#" class="social-item"><span class="icon-twitter"></span></a>
-						<a href="#" class="social-item"><span class="icon-instagram2"></span></a>
-						<a href="#" class="social-item"><span class="icon-linkedin2"></span></a>
-						<a href="#" class="social-item"><span class="icon-vimeo"></span></a>
+						<a href="https://www.instagram.com/mert.almali_" class="social-item"><span class="icon-instagram"></span></a>
+						<a href="https://www.linkedin.com/in/suleyman-mert-almali/" class="social-item"><span class="icon-linkedin2"></span></a>
 					</p>
 				</div>
 			</div>

@@ -7371,3 +7371,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
+
+.icon-snake-icon:before {
+  content: "\e900";
+}
