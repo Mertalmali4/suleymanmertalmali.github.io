@@ -61,71 +61,96 @@
 
 
 
-	<section class="site-section" id="section-portfolio">
-		<div class="container">
+	<style>
+		/* Resimlerin hover efektini ayarlama */
+		.col-sm-4 img {
+		  transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+		
+		.col-sm-4 img:hover {
+		  transform: scale(1.05); /* %5 büyütme */
+		  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+		}
+		</style>
+		
+		<section class="site-section" id="section-portfolio">
+		  <div class="container">
 			<div class="row">
-				<div class="section-heading text-center col-md-12">
-					<h2>My <strong>Projects</strong></h2>
-				</div>
+			  <div class="section-heading text-center col-md-12">
+				<h2>My <strong>Projects</strong></h2>
+			  </div>
 			</div>
-	
+		
 			<div id="carouselProjects" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<!-- İlk Slide -->
-					<div class="carousel-item active">
-						<div class="row">
-							<div class="col-sm-4">
-								<img class="d-block w-100" src="images/ulasımdayapay.jpg" alt="Ulaşımda Yapay Zeka">
-								<h4>Ulaşımda Yapay Zeka</h4>
-								<div class="cat">Teknofest</div>
-							</div>
-							<div class="col-sm-4">
-								<img class="d-block w-100" src="images/araba.png" alt="Robotaksi Binek Otonom">
-								<h4>Robotaksi Binek Otonom</h4>
-								<div class="cat">Teknofest</div>
-							</div>
-							<div class="col-sm-4">
-								<img class="d-block w-100" src="images/havasavunma.png" alt="Hava Savunma Sistemleri">
-								<h4>Hava Savunma Sistemleri</h4>
-								<div class="cat">Teknofest</div>
-							</div>
-						</div>
+			  <div class="carousel-inner">
+				<!-- İlk Slide -->
+				<div class="carousel-item active">
+				  <div class="row">
+					<div class="col-sm-4">
+					  <a href="https://cdn.t3kys.com/media/upload/user_form_upload/2024/4/24/qNvuM3fR5Q3H02xUnly4YHHQ9FYwRKns.pdf" target="_blank">
+						<img class="d-block w-100" src="images/ulasımdayapay.jpg" alt="Ulaşımda Yapay Zeka">
+					  </a>
+					  <h4>Ulaşımda Yapay Zeka</h4>
+					  <div class="cat">Teknofest</div>
 					</div>
-	
-					<!-- İkinci Slide -->
-					<div class="carousel-item">
-						<div class="row">
-							<div class="col-sm-4">
-								<img class="d-block w-100" src="images/voice.png" alt="Voice Assistant">
-								<h4>Voice Assistant</h4>
-								<div class="cat">Github</div>
-							</div>
-							<div class="col-sm-4">
-								<img class="d-block w-100" src="images/p5.jpg" alt="Isometric 3D Extrusion">
-								<h4>Isometric 3D Extrusion</h4>
-								<div class="cat">Typography</div>
-							</div>
-							<div class="col-sm-4">
-								<img class="d-block w-100" src="images/p6.jpg" alt="White Space Photography">
-								<h4>White Space Photography</h4>
-								<div class="cat">Photography</div>
-							</div>
-						</div>
+					<div class="col-sm-4">
+					  <a href="https://cdn.t3kys.com/media/upload/user_form_upload/2024/5/10/4DiV1CdabR5x3URpOHjxjUY2RQtRwFRC.pdf" target="_blank">
+						<img class="d-block w-100" src="images/araba.png" alt="Robotaksi Binek Otonom">
+					  </a>
+					  <h4>Robotaksi Binek Otonom</h4>
+					  <div class="cat">Teknofest</div>
 					</div>
+					<div class="col-sm-4">
+					  
+						<img class="d-block w-100" src="images/havasavunma.png" alt="Hava Savunma Sistemleri">
+					  
+					  <h4>Hava Savunma Sistemleri</h4>
+					  <div class="cat">Teknofest</div>
+					</div>
+				  </div>
 				</div>
-	
-				<!-- Carousel Kontrolleri -->
-				<a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
+		
+				<!-- İkinci Slide -->
+				<div class="carousel-item">
+				  <div class="row">
+					<div class="col-sm-4">
+					  <a href="https://github.com/Mertalmali4/VoiceAssistant" target="_blank">
+						<img class="d-block w-100" src="images/voice.png" alt="Voice Assistant">
+					  </a>
+					  <h4>Voice Assistant</h4>
+					  <div class="cat">Github</div>
+					</div>
+					<div class="col-sm-4">
+					  <a href="https://github.com/Mertalmali4/face-recognition-attendance" target="_blank">
+						<img class="d-block w-100" src="images/face.jpg" alt="Face Recognition Attendance">
+					  </a>
+					  <h4>Face Recognition Attendance</h4>
+					  <div class="cat">Github</div>
+					</div>
+					<div class="col-sm-4">
+					  <a href="https://github.com/Mertalmali4/HandControlledMouse" target="_blank">
+						<img class="d-block w-100" src="images/hand.jpg" alt="Hand Controlled Mouse">
+					  </a>
+					  <h4>Hand Controlled Mouse</h4>
+					  <div class="cat">Github</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		
+			  <!-- Carousel Kontrolleri -->
+			  <a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
 			</div>
-		</div>
-	</section>
+		  </div>
+		</section>
+		
 	
 	<!-- .section -->
 
@@ -287,34 +312,29 @@
 	  
 	  
 	  <section class="site-section" id="section-about">
-
 		<div class="container">
-			<div class="col-md-115 mb-5">
-				<div class="section-heading text-center">
-					<h2>About <strong>Me</strong></h2>
-				</div>
+		  <div class="col-md-115 mb-5">
+			<div class="section-heading text-center">
+			  <h2>About <strong>Me</strong></h2>
 			</div>
-
-			<div class="row mb-5 align-items-center">
-				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-4">
-					<img src="images/teknofest.gif" alt="Image placeholder" class="img-fluid">
-				</div>
-				<div class="col-lg-5 pl-lg-8">
-
-					<p class="lead">
-						Passionate about autonomous systems and automation, I excel at creating intelligent, efficient solutions. With a focus on optimizing performance and precision, I continually push the boundaries of what’s possible in this field.</p>
-					
-
-					<p>
-						<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
-						<a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
-					</p>
-				</div>
-			</div> 
-
-
+		  </div>
+	  
+		  <div class="row mb-5 align-items-center">
+			<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-4">
+			  <img src="images/teknofest.gif" alt="Image placeholder" class="img-fluid">
+			</div>
+			<div class="col-lg-5 pl-lg-8">
+			  <p class="lead">
+				Passionate about autonomous systems and automation, I excel at creating intelligent, efficient solutions. With a focus on optimizing performance and precision, I continually push the boundaries of what’s possible in this field.
+			  </p>
+			  <p style="margin-top: 20px;">
+				<a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
+				<a href="files/CV.pdf" class="btn btn-secondary px-4 py-2 btn-sm" download>Download CV</a>
+			  </p>
+			</div>
+		  </div> 
 		</div>
-	</section>
+	  </section>
 	  
 	<section class="site-section" id="section-contact">
 		<div class="container">
