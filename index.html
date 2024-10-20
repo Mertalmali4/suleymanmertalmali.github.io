@@ -316,7 +316,7 @@
 		</div>
 	</section>
 	  
-	  	<section class="site-section" id="section-contact">
+	<section class="site-section" id="section-contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 mb-5">
@@ -325,25 +325,25 @@
 					</div>
 				</div>
 				<div class="col-md-7 mb-5 mb-md-0">
-					<form action="php/send_email.php" method="POST" class="site-form">
-					  <h3 class="mb-5">Get In Touch</h3>
-					  <div class="form-group">
-						<input type="text" name="name" class="form-control px-3 py-4" placeholder="Your Name" required>
-					  </div>
-					  <div class="form-group">
-						<input type="email" name="email" class="form-control px-3 py-4" placeholder="Your Email" required>
-					  </div>
-					  <div class="form-group">
-						<input type="tel" name="phone" class="form-control px-3 py-4" placeholder="Your Phone" required>
-					  </div>
-					  <div class="form-group mb-5">
-						<textarea name="message" class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message" required></textarea>
-					  </div>
-					  <div class="form-group">
-						<input type="submit" class="btn btn-primary px-4 py-3" value="Send Message">
-					  </div>
+					<form id="contactForm" class="site-form">
+						<h3 class="mb-5">Get In Touch</h3>
+						<div class="form-group">
+							<input type="text" name="name" class="form-control px-3 py-4" placeholder="Your Name" required>
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control px-3 py-4" placeholder="Your Email" required>
+						</div>
+						<div class="form-group">
+							<input type="tel" name="phone" class="form-control px-3 py-4" placeholder="Your Phone" required>
+						</div>
+						<div class="form-group mb-5">
+							<textarea name="message" class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message" required></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary px-4 py-3" value="Send Message">
+						</div>
 					</form>
-				  </div>
+				</div>
 				<div class="col-md-5 pl-md-5">
 					<h3 class="mb-5">My Contact Details</h3>
 					<ul class="site-contact-details">
@@ -358,7 +358,7 @@
 						<li>
 							<span class="text-uppercase">Address</span>
 							Giresun <br>
-							2nd Floor  <br>
+							2nd Floor <br>
 							Gaziler mah. Mehmet Isık cad.
 						</li>
 					</ul>
@@ -366,6 +366,28 @@
 			</div>
 		</div>
 	</section>
+	
+	<script>
+		document.getElementById('contactForm').addEventListener('submit', function(event) {
+			event.preventDefault(); // Formun varsayılan gönderimini engelle
+	
+			// Form verilerini al
+			var name = encodeURIComponent(this.name.value);
+			var email = encodeURIComponent(this.email.value);
+			var phone = encodeURIComponent(this.phone.value);
+			var message = encodeURIComponent(this.message.value);
+	
+			// Mailto linkini oluştur
+			var mailtoLink = `mailto:mertalmali4@gmail.com?subject=New Message from Contact Form&body=Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+	
+			// Kullanıcıyı mailto linkine yönlendir
+			window.location.href = mailtoLink;
+		});
+	</script>
+	
+
+
+
 	<footer class="site-footer">
 		<div class="container">
 
